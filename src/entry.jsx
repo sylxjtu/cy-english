@@ -59,7 +59,7 @@ const Facutly = (props) => (
 
 const MainView = () => (
   <div>
-    <AppBar title="ChungYing College" />
+    <AppBar title="ChungYing College" style={{position:"fixed"}} />
     <Card>
       <CardMedia overlay={
         <CardTitle title="ChungYing College"
@@ -95,10 +95,14 @@ const MainView = () => (
       </CardText>
     </Card>
     <Card>
-      <CardTitle title="Fracture" subtitle="About Mr. Tang"/>
+      <CardTitle title="Fracture"/>
       <CardMedia>
         <img src="resources/fracture.png" />
       </CardMedia>
+      <CardText />
+    </Card>
+    <Card>
+      <CardTitle title="About Mr.Tang"/>
       <CardText>
         <GridList>
           <NoFitTile src="resources/mrtang1.jpg" />
